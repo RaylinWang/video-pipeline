@@ -1,0 +1,125 @@
+{
+  "master": "master.mp4",
+  "fps": 30,
+  "width": 3840,
+  "height": 2160,
+  "durationSec": 206.13,
+  "transcript": "master.json",
+  "subtitle": {
+    "fontSize": 38,
+    "bottomPx": 76,
+    "maxWidthPx": 1480
+  },
+  "scenes": [
+    {
+      "type": "float_shot",
+      "start": 1.0,
+      "end": 5.2,
+      "src": "jingjian/sticker-1.jpg",
+      "position": "right",
+      "widthPct": 16,
+      "dim": 0.12,
+      "breathe": true
+    },
+    {
+      "type": "float_shot",
+      "start": 6.0,
+      "end": 9.2,
+      "src": "jingjian/sticker-2.png",
+      "position": "left",
+      "widthPct": 24,
+      "dim": 0.12,
+      "breathe": true
+    },
+    {
+      "type": "shot",
+      "id": "S-catalog",
+      "start": 73.4,
+      "end": 83.5,
+      "anchor": {
+        "start": "这里是一张图",
+        "end": "普通的主讲"
+      },
+      "intent": "explain",
+      "primary": "image",
+      "layout": "L06",
+      "focus": "L01 人物主讲那一格",
+      "media": [
+        {
+          "id": "catalog",
+          "src": "jingjian/catalog.png",
+          "kind": "image",
+          "focus": {
+            "mode": "outline",
+            "xPct": 2,
+            "yPct": 12,
+            "widthPct": 23,
+            "heightPct": 27
+          }
+        }
+      ],
+      "beats": [
+        {
+          "atSec": 0.2,
+          "action": "show",
+          "target": "catalog"
+        },
+        {
+          "atSec": 5.2,
+          "action": "focus",
+          "target": "catalog.focus"
+        }
+      ]
+    },
+    {
+      "type": "float_shot",
+      "start": 85.0,
+      "end": 88.8,
+      "src": "jingjian/sticker-3.jpg",
+      "position": "left",
+      "widthPct": 25,
+      "dim": 0.12,
+      "breathe": true
+    },
+    {
+      "type": "float_shot",
+      "start": 93.9,
+      "end": 97.3,
+      "src": "jingjian/sticker-4.jpg",
+      "position": "left",
+      "widthPct": 27,
+      "dim": 0.12,
+      "breathe": true
+    },
+    {
+      "type": "float_shot",
+      "start": 113.9,
+      "end": 117.0,
+      "src": "jingjian/sticker-5.jpg",
+      "position": "right",
+      "widthPct": 26,
+      "dim": 0.12,
+      "breathe": true
+    },
+    {
+      "type": "float_shot",
+      "start": 123.1,
+      "end": 125.2,
+      "src": "jingjian/sticker-6.jpg",
+      "position": "left",
+      "widthPct": 13,
+      "dim": 0.12,
+      "breathe": true
+    },
+    {
+      "type": "float_clip",
+      "start": 169.2,
+      "end": 186.0,
+      "src": "jingjian/chengpian-clip.mp4",
+      "position": "center",
+      "widthPct": 42,
+      "dim": 0.3,
+      "radius": 28
+    }
+  ]
+}

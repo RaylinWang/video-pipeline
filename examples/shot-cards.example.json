@@ -1,0 +1,95 @@
+{
+  "master": "master.mp4",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationSec": 24,
+  "transcript": "master.json",
+  "scenes": [
+    {
+      "type": "shot",
+      "id": "S01",
+      "start": 0,
+      "end": 6,
+      "anchor": { "start": "我们先看一下设置页", "end": "导出按钮就在这里" },
+      "intent": "explain",
+      "primary": "screen",
+      "layout": "L04",
+      "focus": "导出按钮",
+      "presenter": {
+        "form": "window",
+        "placement": "bottom-right",
+        "widthPct": 19
+      },
+      "media": [
+        {
+          "id": "settings-screen",
+          "src": "settings-demo.mp4",
+          "kind": "video",
+          "label": "设置页",
+          "focus": {
+            "xPct": 72,
+            "yPct": 68,
+            "widthPct": 18,
+            "heightPct": 12,
+            "atSec": 1.5,
+            "label": "导出",
+            "mode": "spotlight"
+          }
+        }
+      ],
+      "beats": [
+        { "atSec": 0.1, "action": "show", "target": "settings-screen" },
+        { "atSec": 1.5, "action": "focus", "target": "settings-screen.focus" }
+      ]
+    },
+    {
+      "type": "shot",
+      "id": "S02",
+      "start": 7,
+      "end": 12,
+      "anchor": { "start": "这里录屏是主角", "end": "人物只负责陪伴" },
+      "intent": "evidence",
+      "primary": "screen",
+      "layout": "L05",
+      "focus": "录屏中的结果区",
+      "presenter": {
+        "form": "avatar",
+        "placement": "bottom-left",
+        "widthPct": 12
+      },
+      "media": [
+        { "id": "result-screen", "src": "result.png", "kind": "image" }
+      ],
+      "beats": [
+        { "atSec": 0.1, "action": "show", "target": "result-screen" },
+        { "atSec": 1.1, "action": "promote", "target": "result-screen" }
+      ]
+    },
+    {
+      "type": "shot",
+      "id": "S03",
+      "start": 13,
+      "end": 22,
+      "anchor": { "start": "整个过程只有三步", "end": "最后评估复盘" },
+      "intent": "process",
+      "primary": "diagram",
+      "layout": "L11",
+      "focus": "当前步骤",
+      "copy": { "title": "三步闭环" },
+      "diagram": {
+        "variant": "cycle",
+        "nodes": [
+          { "id": "step-1", "text": "提出目标", "atSec": 0.3 },
+          { "id": "step-2", "text": "执行任务", "atSec": 1.4 },
+          { "id": "step-3", "text": "评估复盘", "atSec": 3.1 }
+        ]
+      },
+      "beats": [
+        { "atSec": 0.3, "action": "show", "target": "step-1" },
+        { "atSec": 1.4, "action": "show", "target": "step-2" },
+        { "atSec": 3.1, "action": "show", "target": "step-3" }
+      ]
+    }
+  ]
+}

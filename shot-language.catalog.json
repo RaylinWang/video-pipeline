@@ -1,0 +1,112 @@
+{
+  "version": "1.1.0",
+  "layouts": [
+    {
+      "id": "L01",
+      "name": "人物主讲",
+      "short": "人物铺满，少量标签辅助",
+      "aliases": ["人物全屏", "人物主画面", "回到人物"],
+      "requiredMediaMin": 0,
+      "bestFor": ["presenter", "conclusion", "breather"]
+    },
+    {
+      "id": "L02",
+      "name": "人物左・素材右",
+      "short": "人物约四成，素材约六成",
+      "aliases": ["人物和截屏并列", "左人右屏", "人物素材并列"],
+      "requiredMediaMin": 1,
+      "bestFor": ["explain", "evidence"]
+    },
+    {
+      "id": "L03",
+      "name": "素材左・人物右",
+      "short": "素材约六成，人物约四成",
+      "aliases": ["左屏右人", "截屏人物并列"],
+      "requiredMediaMin": 1,
+      "bestFor": ["explain", "evidence"]
+    },
+    {
+      "id": "L04",
+      "name": "素材主屏・人物窗",
+      "short": "素材接管画面，人物为圆角矩形小窗",
+      "aliases": ["录屏主流人物小窗", "画中画", "右侧人物窗"],
+      "requiredMediaMin": 1,
+      "bestFor": ["evidence", "explain", "process"]
+    },
+    {
+      "id": "L05",
+      "name": "素材主屏・圆头像",
+      "short": "素材接管画面，人物裁成圆形头像",
+      "aliases": ["录屏加圆头像", "圆形人物画中画"],
+      "requiredMediaMin": 1,
+      "bestFor": ["explain", "evidence"]
+    },
+    {
+      "id": "L06",
+      "name": "全屏素材",
+      "short": "人物退场，单个素材独占画面",
+      "aliases": ["素材铺满", "全屏录屏", "全屏B-roll"],
+      "requiredMediaMin": 1,
+      "bestFor": ["evidence", "breather"]
+    },
+    {
+      "id": "L07",
+      "name": "双素材对比",
+      "short": "两份素材左右并列比较",
+      "aliases": ["左右对比", "A/B对比", "前后对比"],
+      "requiredMediaMin": 2,
+      "bestFor": ["compare"]
+    },
+    {
+      "id": "L08",
+      "name": "证据拼贴",
+      "short": "三份以上截图或图表形成证据墙",
+      "aliases": ["证据墙", "多图拼贴", "截图墙"],
+      "requiredMediaMin": 3,
+      "bestFor": ["evidence"]
+    },
+    {
+      "id": "L09",
+      "name": "人物中心・卡片环绕",
+      "short": "人物居中，标签或素材从四周建立关系",
+      "aliases": ["人物周围贴图", "绕脸排版", "中心关系图"],
+      "requiredMediaMin": 1,
+      "bestFor": ["explain"]
+    },
+    {
+      "id": "L10",
+      "name": "人物前景・后置大字",
+      "short": "大字位于人物后方，需要人物抠像",
+      "aliases": ["字在人后", "人物挡住文字", "后置大字"],
+      "requiredMediaMin": 0,
+      "requiresCutout": true,
+      "bestFor": ["conclusion", "chapter"]
+    },
+    {
+      "id": "L11",
+      "name": "步骤・流程推演",
+      "short": "节点、步骤或闭环随口播逐项建立",
+      "aliases": ["流程图", "时间线", "闭环", "步骤条"],
+      "requiredMediaMin": 0,
+      "requiresItems": true,
+      "bestFor": ["process", "explain"]
+    },
+    {
+      "id": "L12",
+      "name": "章节・结论大字",
+      "short": "用一句大字完成认知重置",
+      "aliases": ["标题卡", "金句", "结论页", "章节幕"],
+      "requiredMediaMin": 0,
+      "requiresTitle": true,
+      "bestFor": ["chapter", "conclusion"]
+    },
+    {
+      "id": "L13",
+      "name": "简笔画演进",
+      "short": "压暗保留人物，简笔画A→手绘箭头→简笔画B",
+      "aliases": ["简笔画对比", "草图演进", "A到B"],
+      "requiredMediaMin": 2,
+      "bestFor": ["explain", "compare"]
+    }
+  ]
+}
